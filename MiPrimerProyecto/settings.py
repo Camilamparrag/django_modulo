@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8000",
+    "https://obscure-space-guide-pjvw4j6pv6vjf6vp6-8000.app.github.dev",
+]
+
 
 # Application definition
 
