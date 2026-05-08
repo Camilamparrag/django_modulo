@@ -25,11 +25,12 @@ SECRET_KEY = "django-insecure-k*og#ksw_c!))ul8@i%ps_!2gs-jk3k_9sulf7515m6mf__tp2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:8000",
-    "https://obscure-space-guide-pjvw4j6pv6vjf6vp6-8000.app.github.dev",
+    "https://localhost:8000",
+    "https://127.0.0.1:8000",
+    "https://*.app.github.dev",
 ]
 
 
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "productos",
 ]
 
 MIDDLEWARE = [
